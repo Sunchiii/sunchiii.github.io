@@ -218,6 +218,8 @@
     {
       "name": "makingWeb Blog Competition",
       "isActive": true,
+      "url": "",
+      "github": "",
       "description": "First prize winner in a national web development blog competition organized by FEN in 2020.",
       "highlights": [
         "First prize at national level",
@@ -232,6 +234,8 @@
     {
       "name": "Design for Challenge 2019",
       "isActive": true,
+      "url": "",
+      "github": "",
       "description": "Participated in a product creation solutions event, designing innovative concepts to address real-world challenges.",
       "highlights": [
         "Product creation solutions event",
@@ -242,6 +246,8 @@
     {
       "name": "CDS/IPS Data Synchronization & Backup System",
       "isActive": true,
+      "url": "",
+      "github": "",
       "description": "Automated data synchronization and backup system between CDS and IPS systems to ensure data integrity and availability.",
       "highlights": [
         "Automated data sync between CDS and IPS",
@@ -258,6 +264,8 @@
     {
       "name": "Distributed Storage System (Firebase-like)",
       "isActive": true,
+      "url": "",
+      "github": "",
       "description": "Custom object storage system designed from scratch, providing Firebase-like distributed storage capabilities for internal use.",
       "highlights": [
         "Custom-built object storage from scratch",
@@ -273,6 +281,8 @@
     {
       "name": "Odometer Detection (YOLO)",
       "isActive": true,
+      "url": "",
+      "github": "",
       "description": "Machine learning model leveraging YOLO for detecting and reading odometer values from images.",
       "highlights": [
         "YOLO-based object detection model",

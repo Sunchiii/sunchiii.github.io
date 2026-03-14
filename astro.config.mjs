@@ -4,10 +4,10 @@ import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import mdx from '@astrojs/mdx';
 import playformCompress from "@playform/compress";
-import vercel from "@astrojs/vercel/serverless";
-
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://Sunchiii.github.io',
+  base: '/potfolio2.0',
   integrations: [
     tailwind(),
     mdx(),
@@ -22,11 +22,9 @@ export default defineConfig({
       CSS: false,
       Image: false,
       Action: {
-        Passed: async () => true,  
+        Passed: async () => true,
       },
     })
   ],
-  output: 'server',
-  adapter: vercel(),
-  
+  output: 'static',
 });
