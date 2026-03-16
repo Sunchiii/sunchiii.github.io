@@ -7,7 +7,6 @@ import playformCompress from "@playform/compress";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://Sunchiii.github.io',
-  base: '/potfolio2.0',
   integrations: [
     tailwind(),
     mdx(),

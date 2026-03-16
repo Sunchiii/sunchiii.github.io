@@ -18,24 +18,14 @@ const {
   image = CV.basics.image,
   canonicalURL = CV.basics.url,
   keywords = [
-    "Anmol Singh",
-    "AJ Dev",
-    "Anmol Pro",
-    "Full Stack Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Web Developer",
-    "Software Engineer",
-    "React Developer",
-    "Next.js Developer",
-    "TypeScript Developer",
+    "Lasun Vongveodee",
+    "Backend Engineer",
+    "DevOps Engineer",
     "Go Developer",
-    "Panipat",
-    "India",
+    "Software Engineer",
     "Portfolio",
-    "E-commerce Projects",
-    "Music App",
-    "Social Media App"
+    "Khammouane",
+    "Laos"
   ]
 } = Astro.props;
 
@@ -43,14 +33,14 @@ const { url, theme, name, location } = CV.basics;
 const { city, region } = location;
 
 // Create a more detailed description
-const detailedDescription = `Anmol Singh (AJ Dev) - Full Stack Developer. Explore my portfolio, projects, and contact info. Frontend, backend, and more.`;
+const detailedDescription = `Lasun Vongveodee - Backend & DevOps Engineer. Explore my portfolio, projects, and contact info. Go, Docker, Kubernetes, and more.`;
 
 // Create structured data for better SEO
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": name,
-  "alternateName": "AJ Dev",
+  "alternateName": "Sunchiii",
   "jobTitle": CV.basics.label,
   "url": url,
   "email": CV.basics.email,
@@ -103,6 +93,9 @@ const breadcrumbSchema = {
     }
   ]
 };
+
+const withBase = (path: string) =>
+  path.startsWith('/') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
 ---
 
 <!doctype html>
@@ -124,11 +117,11 @@ const breadcrumbSchema = {
     <link rel="canonical" href={canonicalURL} />
     
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
-    
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} type="image/x-icon"/>
+    <link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL}apple-touch-icon.webp`} />
+
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href={image} />
+    <link rel="preload" as="image" href={withBase(image)} />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

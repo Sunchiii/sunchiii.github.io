@@ -13,7 +13,7 @@ export interface Props {
 
 const { 
 	title,
-	description = "Interactive Neovim-themed portfolio interface showcasing Anmol Singh's projects and experience. A keyboard-friendly, terminal-inspired alternative view of a full-stack developer's portfolio featuring e-commerce, music streaming, and social media applications."
+	description = "Interactive Neovim-themed portfolio interface showcasing Lasun Vongveodee's projects and experience. A keyboard-friendly, terminal-inspired alternative view of a backend and DevOps engineer's portfolio."
 } = Astro.props;
 
 const { url, image, name, location } = CV.basics;
@@ -81,8 +81,8 @@ const keywords = [
 	<link rel="canonical" href={`${url}/neovim`} />
 	
 	<!-- Favicon -->
-	<link rel="icon" type="image/svg+xml" href="/neovim.webp" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
+	<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}neovim.webp`} />
+	<link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL}apple-touch-icon.webp`} />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
